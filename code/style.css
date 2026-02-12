@@ -1,0 +1,266 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    margin: 0 0 0 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+.font_STD {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.align_down {
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 0 0 0;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    align-items: flex-start;
+    width: 100vw;
+    height: auto;
+    z-index: 999;
+    background-color: white;
+}
+
+
+.header_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;           /* samakan tinggi navbar */
+    background: white;     /* pastikan putih penuh */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 9999;         /* biar gak ketutup biru */
+    border-bottom: 1px solid #ddd; /* opsional, biar rapi */
+}
+
+.header_nav_list {
+    list-style-type: none;
+    align-items: center;
+    left: 32.8vw;
+}
+
+.header_nav_list_member {
+    align-items: center;
+    justify-content: center;
+    width: 15.27vw;
+    height: min(6.597vw, 5.94rem);
+    font-size: clamp(0.1rem, 1rem, 1.5rem);
+    font-weight: 400;
+    border-left: black solid 1px;
+    text-align: center;
+}
+
+.header_nav_list_member_content {
+    text-decoration: none;
+    color: black;
+}
+
+.header_nav_list_member_content:visited {
+    color: black;
+}
+
+.header_nav_list_member_content:active {
+    color: black;
+}
+
+.header_nav_dapurKita {
+    font-weight: 700;
+    font-size: clamp(1rem, 2rem, 6rem);
+    text-align: left;
+}
+
+.header_img {
+    max-width: 100%;
+    height: 71vh;
+    max-height: 71vh;
+    display: block;
+    position: fixed;
+    left: 0;
+    flex-wrap: wrap
+}
+
+.auto_crop_img {
+    width: 100vw;
+    height: calc(100vh - 14.206vh);
+    object-fit: cover;
+}
+
+.home_main {
+    position: fixed;
+    left: 0;
+    top: 85.8vh;
+    width: 100vw;
+}
+
+.header_banner {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - min(6.597vw, 5.94rem));
+    top: min(6.597vw, 5.94rem);
+    left: 0;
+}
+
+.header_banner_text {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0
+}
+
+.highlight_title {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: fixed;
+    width: 100vw;
+    height: 14.7vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.head_resep_kami {
+    top: 85.8vh;
+    background-color: aqua;
+}
+
+.Home_resep {
+    position: fixed;
+    left: 0;
+    top: 85.8;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 75.5vw;
+    width: 100vw;
+}
+
+footer {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: max(18.75, 5rem);
+    width: 100vw;
+    background-color: #0A1439;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.footer_list {
+    margin: 0 0 0 4.22vw;
+    padding: 0 0 0 0;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: flex-start;
+    color: white;
+    font-size: clamp(0.1rem, 1rem, 1.5rem);
+    font-weight: 400;
+}
+
+.footer_list:active {
+    color: white;
+}
+
+.footer_list:visited {
+    color: white;
+}
+
+.footer_box {
+    margin: 3.6vh 0 0 2vw;
+    height: auto;
+    width: calc(50vw - 2vw);
+    position: fixed;
+    left: 0;
+}
+
+
+
+/* Section Resep */
+.resep_section {
+    margin-top: 64px;   
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #0A2E8A; 
+    padding: 4vh 4vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resep_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.resep_title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+.search-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    max-width: 1000px;   
+}
+
+.search-input {
+    flex: 1;           
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.btn_lihat{
+    white-space: nowrap;
+}
+
+.resep_filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.filter_btn {
+    padding: 6px 14px;
+    border-radius: 14px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
